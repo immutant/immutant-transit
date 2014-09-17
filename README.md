@@ -4,6 +4,10 @@ A library that allows you to use
 [Transit](https://github.com/cognitect/transit-format) as a read/write
 codec with Immutant 2.x messaging and caching.
 
+This is a standalone project, but cannot be used without
+Immutant 2.x. Once Transit becomes stable, this will likely move in to
+Immutant proper.
+
 ## Usage
 
 You'll need to bring in your own version of Transit ("0.8.255" or
@@ -17,7 +21,17 @@ see [project.clj](project.clj) for the version we test against).
 See the [example application](example-app/README.md) for sample usage
 with Immutant.
 
-TODO: coords, sample
+For a Leiningen project:
+
+    [org.immutant/immutant-transit "0.1.0"]
+
+For a maven project:
+
+    <dependency>
+      <groupId>org.immutant</groupId>
+      <artifactId>immutant-transit</artifactId>
+      <version>0.1.0</version>
+    </dependency>
 
 ## License
 
