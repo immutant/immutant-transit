@@ -23,4 +23,6 @@
                              [com.cognitect/transit-clj "0.8.255"]
                              [org.immutant/core "2.x.incremental.292"]]
               :repositories [["Immutant incremental builds"
-                              "http://downloads.immutant.org/incremental/"]]}})
+                              "http://downloads.immutant.org/incremental/"]]}}
+  :signing {:gpg-key "BFC757F9"}
+  :lein-release {:deploy-via :clojars})
