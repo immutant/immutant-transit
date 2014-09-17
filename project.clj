@@ -12,7 +12,7 @@
 ;; See the License for the specific language governing permissions and
 ;; limitations under the License.
 
-(defproject immutant-transit "0.1.0-SNAPSHOT"
+(defproject org.immutant/immutant-transit "0.1.0-SNAPSHOT"
   :description "Create Transit codecs for Immutant."
   :url "https://github.com/immutant/immutant-transit/"
   :license {:name "Apache Software License - v 2.0"

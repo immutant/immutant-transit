@@ -1,7 +1,8 @@
 # immutant-transit
 
-A library that allows you to use [Transit] as a read/write codec with
-Immutant 2.x messaging and caching.
+A library that allows you to use
+[Transit](https://github.com/cognitect/transit-format) as a read/write
+codec with Immutant 2.x messaging and caching.
 
 ## Usage
 
@@ -13,7 +14,10 @@ This won't work with Immutant 2.0.0-alpha1 - you'll need to run an
 [incremental build](http://immutant.org/builds/2x/) (#292 or newer,
 see [project.clj](project.clj) for the version we test against).
 
-TODO: coords, sample, example app
+See the [example application](example-app/README.md) for sample usage
+with Immutant.
+
+TODO: coords, sample
 
 ## License
 
