@@ -55,9 +55,10 @@
                     data)
                   (.toByteArray out)))
       :decode (fn [data]
-                (with-open [in (ByteArrayInputStream. data)]
-                  (transit-read
-                    (transit-reader in type {:handlers read-handlers})))))))
+                (when data
+                  (with-open [in (ByteArrayInputStream. data)]
+                    (transit-read
+                      (transit-reader in type {:handlers read-handlers}))))))))
 
 (set-valid-options! transit-codec #{:name :content-type :type
                                     :read-handlers :write-handlers})
