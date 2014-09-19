@@ -23,7 +23,7 @@ with Immutant.
 
 For a Leiningen project:
 
-    [org.immutant/immutant-transit "0.1.0"]
+    [org.immutant/immutant-transit "0.2.0"]
 
 For a maven project:
 
