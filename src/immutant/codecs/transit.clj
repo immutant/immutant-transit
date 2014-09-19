@@ -14,7 +14,8 @@
 
 (ns immutant.codecs.transit
   "Provides support for using Transit as an Immutant codec."
-  (:require [immutant.codecs           :refer [make-codec register-codec]]
+  (:require [immutant.codecs           :refer [decode-error
+                                               make-codec register-codec]]
             [immutant.internal.util    :refer [kwargs-or-map->raw-map
                                                try-resolve
                                                try-resolve-throw]]
@@ -55,10 +56,13 @@
                     data)
                   (.toByteArray out)))
       :decode (fn [data]
-                (when data
-                  (with-open [in (ByteArrayInputStream. data)]
-                    (transit-read
-                      (transit-reader in type {:handlers read-handlers}))))))))
+                (try
+                  (when data
+                    (with-open [in (ByteArrayInputStream. data)]
+                      (transit-read
+                        (transit-reader in type {:handlers read-handlers}))))
+                  (catch Throwable e
+                    (throw (decode-error :transit data e))))))))
 
 (set-valid-options! transit-codec #{:name :content-type :type
                                     :read-handlers :write-handlers})

@@ -21,7 +21,7 @@
   :profiles {:dev
              {:dependencies [[org.clojure/clojure "1.6.0"]
                              [com.cognitect/transit-clj "0.8.255"]
-                             [org.immutant/core "2.x.incremental.292"]]
+                             [org.immutant/core "2.x.incremental.296"]]
               :repositories [["Immutant incremental builds"
                               "http://downloads.immutant.org/incremental/"]]}}
   :signing {:gpg-key "BFC757F9"}

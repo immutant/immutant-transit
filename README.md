@@ -15,7 +15,7 @@ later, see [project.clj](project.clj) for the version we test
 against).
 
 This won't work with Immutant 2.0.0-alpha1 - you'll need to run an
-[incremental build](http://immutant.org/builds/2x/) (#292 or newer,
+[incremental build](http://immutant.org/builds/2x/) (#296 or newer,
 see [project.clj](project.clj) for the version we test against).
 
 See the [example application](example-app/README.md) for sample usage

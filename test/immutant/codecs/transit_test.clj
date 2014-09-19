@@ -52,3 +52,12 @@
 
 (deftest transit-with-custom-handlers-should-work
   (test-codec {:point (->Point 0 0)} :transit-shapes))
+
+(deftest transit-decode-errors-should-throw-ex-info
+  (try
+    (decode "[" :transit)
+    (is false)
+    (catch clojure.lang.ExceptionInfo e
+      (is (= {:data "["
+              :type :decode-exception}
+            (ex-data e))))))
