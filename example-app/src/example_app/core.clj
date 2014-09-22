@@ -4,13 +4,13 @@
             [immutant.codecs.transit :as it]
             [cognitect.transit :as transit]))
 
-(comment
-  (defrecord Square [x y size])
+(defrecord Square [x y size])
 
-  (def queue (msg/queue "a-sample-queue" :durable false))
+(def queue (msg/queue "a-sample-queue" :durable false))
 
-  (def cache (cache/cache "transit-example"))
+(def cache (cache/cache "transit-example"))
 
+(defn -main []
   ;; enable a vanilla transit codec
   (it/register-transit-codec)
 
@@ -57,6 +57,4 @@
 
   ;; access the base cache and see the encoded value (we have to use
   ;; the encoded key)
-  (String. (get cache (.getBytes "[\"~#'\",\"~:a-key\"]")))
-
-  )
+  (String. (get cache (.getBytes "[\"~#'\",\"~:a-key\"]"))))
