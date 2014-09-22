@@ -23,14 +23,14 @@ with Immutant.
 
 For a Leiningen project:
 
-    [org.immutant/immutant-transit "0.2.0"]
+    [org.immutant/immutant-transit "0.2.1"]
 
 For a maven project:
 
     <dependency>
       <groupId>org.immutant</groupId>
       <artifactId>immutant-transit</artifactId>
-      <version>0.1.0</version>
+      <version>0.2.1</version>
     </dependency>
 
 ## License
