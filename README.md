@@ -11,7 +11,7 @@ Immutant proper.
 ## Usage
 
 immutant-transit transitively brings in
-`com.cognitect/transit-clj` 0.8.255, and may not work with any other
+`com.cognitect/transit-clj` 0.8.259, and may not work with any older
 version.
 
 This won't work with Immutant 2.0.0-alpha1 - you'll need to run an
@@ -23,14 +23,14 @@ with Immutant.
 
 For a Leiningen project:
 
-    [org.immutant/immutant-transit "0.2.1"]
+    [org.immutant/immutant-transit "0.2.2"]
 
 For a maven project:
 
     <dependency>
       <groupId>org.immutant</groupId>
       <artifactId>immutant-transit</artifactId>
-      <version>0.2.1</version>
+      <version>0.2.2</version>
     </dependency>
 
 ## License
