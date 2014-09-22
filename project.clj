@@ -18,7 +18,7 @@
   :license {:name "Apache Software License - v 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0"
             :distribution :repo}
-  :dependencies [[com.cognitect/transit-clj "0.8.255"]]
+  :dependencies [[com.cognitect/transit-clj "0.8.259"]]
   :profiles {:dev
              {:dependencies [[org.clojure/clojure "1.6.0"]
                              [org.immutant/core "2.x.incremental.296"]]
