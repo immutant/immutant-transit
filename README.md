@@ -10,12 +10,12 @@ Immutant proper.
 
 ## Usage
 
-You'll need to bring in your own version of Transit ("0.8.255" or
-later, see [project.clj](project.clj) for the version we test
-against).
+immutant-transit transitively brings in
+`com.cognitect/transit-clj` 0.8.255, and may not work with any other
+version.
 
 This won't work with Immutant 2.0.0-alpha1 - you'll need to run an
-[incremental build](http://immutant.org/builds/2x/) (#296 or newer,
+[incremental build](http://immutant.org/builds/2x/) (#298 or newer,
 see [project.clj](project.clj) for the version we test against).
 
 See the [example application](example-app/README.md) for sample usage
