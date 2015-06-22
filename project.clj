@@ -22,4 +22,5 @@
   :profiles {:dev
              {:dependencies [[org.clojure/clojure "1.6.0"]
                              [org.immutant/core "2.0.1"]]}}
-  :signing {:gpg-key "BFC757F9"})
+  :signing {:gpg-key "BFC757F9"}
+  :deploy-repositories [["releases" {:url "https://clojars.org/repo/" :creds :gpg}]])
