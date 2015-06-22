@@ -11,7 +11,7 @@ move in to Immutant proper.
 ## Usage
 
 immutant-transit transitively brings in
-`com.cognitect/transit-clj` 0.8.259, and may not work with any older
+`com.cognitect/transit-clj` 0.8.275, and may not work with any older
 version.
 
 See the [example application](example-app/README.md) for sample usage
