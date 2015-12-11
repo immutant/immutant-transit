@@ -18,9 +18,9 @@
   :license {:name "Apache Software License - v 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0"
             :distribution :repo}
-  :dependencies [[com.cognitect/transit-clj "0.8.275"]]
+  :dependencies [[com.cognitect/transit-clj "0.8.285"]]
   :profiles {:dev
-             {:dependencies [[org.clojure/clojure "1.6.0"]
-                             [org.immutant/core "2.0.1"]]}}
+             {:dependencies [[org.clojure/clojure "1.7.0"]
+                             [org.immutant/core "2.1.1"]]}}
   :signing {:gpg-key "BFC757F9"}
   :deploy-repositories [["releases" {:url "https://clojars.org/repo/" :creds :gpg}]])

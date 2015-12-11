@@ -6,7 +6,7 @@
 
 (defrecord Square [x y size])
 
-(def queue (msg/queue "a-sample-queue" :durable false))
+(def queue (msg/queue "a-sample-queue" :durable? false))
 
 (def cache (cache/cache "transit-example"))
 
