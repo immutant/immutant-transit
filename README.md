@@ -19,14 +19,14 @@ with Immutant.
 
 For a Leiningen project:
 
-    [org.immutant/immutant-transit "0.2.3"]
+    [org.immutant/immutant-transit "0.2.4"]
 
 For a maven project:
 
     <dependency>
       <groupId>org.immutant</groupId>
       <artifactId>immutant-transit</artifactId>
-      <version>0.2.3</version>
+      <version>0.2.4</version>
     </dependency>
 
 ## License

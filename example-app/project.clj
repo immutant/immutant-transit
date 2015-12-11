@@ -16,5 +16,5 @@
   :description "Immntant-transit example app."
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.immutant/immutant "2.1.1"]
-                 [org.immutant/immutant-transit "0.2.3"]]
+                 [org.immutant/immutant-transit "0.2.4"]]
   :main example-app.core)
